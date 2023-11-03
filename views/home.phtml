@@ -10,6 +10,10 @@
 
 <body>
     <?= var_dump($_SESSION['user']) ?>
+    <form action="./controllers/AuthController.php" method="post">
+        <input type="hidden" name="type" value="logout"/> 
+        <input type="submit" value="Se déconnecter"/>
+    </form>
 </body>
 
 </html>

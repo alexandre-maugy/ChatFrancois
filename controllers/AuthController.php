@@ -46,7 +46,7 @@ class AuthController
 
                 case 'logout':
                     session_destroy();
-                    header('Location: index.php?login');
+                    header('Location: ../index.php?login');
                     break;
                 default:
                     break;
